@@ -1,0 +1,311 @@
+/*---------- publicidad -------------------------*/
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.contenido {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.publicidad {
+    width: 150px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-left: 2px solid #ccc;
+}
+
+.publicidad img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+/*--------- Cuerpo de la web ------------------------------------------------------------------------------- */
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    background-color: #555;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
+/*-------------footer* ----------------*/
+
+footer {
+    margin-top: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top: 10px solid #00b8d4;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav a {
+    color: #00b8d4;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*--------productos destacados-------------*/
+
+.clase-productos {
+    display: flex;
+    padding: 2vh;
+    border-bottom: 2px solid #ccc;
+}
+
+.clase-productos a:hover {
+    transform: translateY(-10px);
+    animation: 1s;
+}
+
+.img-productos {
+    width: 150px;
+    height: 100px;
+    border-radius: 15px;
+    border-color: #333;
+    margin: 5px;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* -------- categorías ---------------------------------------------*/
+.clase-categorias {
+    padding: 1vh 50px;
+
+    margin-top: 40px;
+}
+
+.clase-categorias ul {
+    list-style-type: none;
+}
+
+.clase-categorias li {
+    margin-bottom: 5px;
+}
+
+.clase-categorias a {
+    display: block;
+    width: 200px;
+    margin: 10px left;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.clase-categorias a:hover {
+    animation: 1s;
+    transform: translateX(10px);
+}
+
+/*------------------------- tablas -------------------------------------------------------- */
+
+.tabla-placa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla-placa,
+th,
+td {
+    border: 1px solid #333;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+.boton-ver-mas {
+    display: inline-block;
+    background-color: #00b8d4;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.boton-mas:hover {
+    background-color: #007c91;
+}
+
+
+/*--------- problemas --------------------------------*/
+
+#div-problema {
+    text-align: center;
+}
+
+.problema-form select {
+    margin-bottom: 15px;
+}
+
+.problema-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.problema-form input,
+.problema-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.problema-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.problema-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*--------------- comida------------------------*/
+
+#imgcomida {
+    width: 40vh;
+    height: 40vh;
+}
+
+
+
+/*----------------SIN STOCK-------------------------------------------------------------------------------*/
+.caratriste {
+    transition: 2s;
+}
+
+.caratriste:hover {
+    transition: 2s;
+    transform: translateX(100px);
+    opacity: 0;
+}
+
+#sin-stock {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*---------- nosotros y cookies----------*/
+.nosotros-section {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #eef5f7;
+}
+
+.nosotros-valores {
+    text-align: left;
+    list-style-type: square;
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.nosotros-valores li {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+/*---------------- compartido ----------*/
+
+.div-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 40px auto;
+    width: 60%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.botoninicio {
+    background-color: #333;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.img-placa {
+    width: 30vh;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}

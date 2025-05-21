@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago García, Sergio Martín Piqueras">
+    <meta name="keywords" content="Ordenadores, variedad, calidad">
+    <title>¿Problemas? - PCsinComponentes</title>
+</head>
+
+<body>
+    <div class="principal">
+
+        <div class="contenido">
+            <header>
+                <h1>PCsinComponentes</h1>
+            </header>
+
+            <nav>
+                <a href="inicio.html">Inicio</a>
+                <a href="problemas.html">¿Problemas?</a>
+                <a href="comida.html">Comida</a>
+            </nav>
+            <section class="clase-productos">
+                <h2>Últimos Productos </h2>
+                <a href="sinstock.html"><img src="img/rtx3080OutOfStock.jpg" alt="RTX3080OutofStock"
+                        class="img-productos"></a>
+                <a href="sinstock.html"><img src="img/cpuoutofstock.jpg" alt="CPUOutOfStock" class="img-productos"></a>
+                <a href="placabase.html"><img src="img/placabasegigabytez590aoruspro.png" alt="Z590PB"
+                        class="img-productos"></a><a href="ram.html"><img src="img/ramtridentz.png" alt="RAM"
+                        class="img-productos"></a>
+                <a href="procesadores.html"><img src="img/i913900k.png" alt="CPUi913900k" class="img-productos"></a>
+                <a href="tarjetasgraficas.html"><img src="img/rtx4090.jpg" alt="RTX4090" class="img-productos"></a>
+            </section>
+
+            <div id="div-problema">
+                <h2>¿Tienes un problema?</h2>
+                <h3>Rellena este formulario y en breve nos pondremos en contacto contigo.</h3>
+            </div>
+
+            <form action="formenviado.html" class="problema-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required autofocus tabindex="1">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required tabindex="2">
+
+                <label for="problema">Tipo de problema:</label>
+
+                <select name="problema" id="problema" required tabindex="3">
+
+                    <option value="servicioweb">Servicio Web</option>
+                    <option value="paqueteria">Paquetería</option>
+                    <option value="reembolso">Reembolso</option>
+                    <option value="cuenta">Cuenta</option>
+                    <option value="productodef">Producto defectuoso</option>
+                    <option value="otro">Otro</option>
+
+                </select>
+
+                <label for="mensaje">Descripción del problema:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required tabindex="4"></textarea>
+
+                <button type="submit" tabindex="5">Enviar Mensaje</button>
+            </form>
+            <footer>
+                <p>&copy; 2025 PCsinComponentes. Todos los derechos reservados.</p>
+                <nav class="footer-nav">
+                    <a href="nosotros.html">Sobre nosotros</a> |
+                    <a href="cookies.html">Política de cookies</a>
+                </nav>
+            </footer>
+        </div>
+
+        <aside class="publicidad">
+            <img src="img/publicidad.png" alt="Publicidad">
+        </aside>
+
+    </div>
+</body>
+
+</html>
